@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Questionnaire</title>
+        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+        <link rel="stylesheet" href="../styles/lab1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+    <div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+        <h1>Survey</h1>
+        <form id="myform" action="index.html" >
+
+            <br>
+            <! Choose a website to evaluate >
+            <h3><i>Satisfaction Survey on School Facilities and Projects</i></h3>
+            <h2>What do you think of the facilities in <a href="https://www.uottawa.ca">uOttawa</a>?</h2>
+            <br>
+
+            <br>
+
+            <a href="https://www.uottawa.ca/en"target="_blank"><img src="3125Lab6/image/uOttawa_1.png"width="600" height="160" alt="https://www.uottawa.ca/en"border="0"></a>
+            <br>
+            <br>
+            <div class="question">
+                <h2> Personal Information </h2>
+                <p>First name: <input type="text" placeholder="firstname..." required /></p>
+                <p>Last name: <input type="text" placeholder="lastname..." required /></p>
+                <p>Student number: <input type="text" placeholder="123456789..." required /></p>
+                <br>
+
+            </div>
+
+            <div class="question">
+            <div class="food" >
+                <h2> 1. What kind of food do you usually eat in the Dining Hall?  </h2>
+                I like:<br>
+                <input type="checkbox" name= "food" value="Pasta">Pasta<br>
+                <input type="checkbox" name= "food" value="Fish">Fish<br>
+                <input type="checkbox" name= "food" value="Fired rice">Fired rice<br>
+                <input type="checkbox" name= "food" value="Beverage">Beverage<br>
+                <input type="checkbox" name= "food" value="Pizza">Pizza<br>
+
+                <br>
+            </div>
+            </div>
+            <div class="feelings">
+                <h2> 2. Do you have any feeling in the Dining Hall? </h2>
+                I have feelings about:<br>
+                <input type="checkbox" name="feelings" value="Crowded">Crowded<br>
+                <input type="checkbox" name="feelings" value="Noisy">Noisy<br>
+                <input type="checkbox" name="feelings" value="Clean">Clean<br>
+                <input type="checkbox" name="feelings" value="Delicious">Delicious<br>
+                <br>
+            </div>
+            <div class="time">
+                <h2>3. How long do you spend in the cafeteria on average each time?</h2>
+                <br>
+                <select name="time">
+                    <option value="within 1 hour" selected="selected">within 1 hour</option>
+                    <option value="1-3 hours">1-3 hours</option>
+                    <option value="3-6 hours">3-6 hours</option>
+                    <option value="more than 6 hours">more than 6 hours</option>
+                </select>
+            </div>
+            <div class="events">
+                <h2>4. What events do you usually use the gym for?</h2>
+                <br>
+                <select name="sports">
+                    <option value="Basketball" selected="selected">Basketball</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Singing, dancing and Rapping">Singing, dancing and Rapping</option>
+                    <option value="Never used">Never used</option>
+                </select>
+            </div>
+            <div class="check">
+                <h2> 5. Whether the facilities of the gymnasium are perfect and complete? </h2>
+                <br>
+                <input type="checkbox" name= "check" value="Completed">Completed<br>
+                <input type="checkbox" name= "check" value="Uncompleted">Uncompleted<br>
+
+                <br>
+                If uncompleted, please give us any advices:<br>
+                <textarea rows="5" cols="30"></textarea>
+
+                <br>
+                <br>
+
+            </div>
+            <div class="library">
+                <h2> 6. Do you often use the library loan service to read? </h2>
+                <br>
+                <input type="checkbox" name="library" value="Most of the time study in the library">Most of the time study in the library<br>
+                <input type="checkbox" name="library" value="Occasionally borrow books from the library to study">Occasionally borrow books from the library to study<br>
+                <input type="checkbox" name="library" value="Not Crowded">Never been to the library<br>
+                <input type="checkbox" name="library" value="Not Crowded">Do we have a library?<br>
+                <br>
+
+            </div>
+
+                <br>
+
+                <br>
+                <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+                <p id="thanks"></p>
+            </form>
+            </div>
+        <script src="/public/action.js"></script>
+    </body>
+</html>
