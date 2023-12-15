@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+      <h1>uottawa G8 hair salon</h1>
+      <p>The salon owned by only three students!</p>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3> Business time</h3>
+          <p>Mon - Fri</p>
+          <p>10am - 5pm</p>
+        </div>
+        <div class="col-sm-4">
+          <h3> Salon address</h3>
+          <p>555 Lees Avenue, Ottawa, ON, 1E2 3R4</p>
+        </div>
+        <div class="col-sm-4">
+          <h3> Prices</h3>
+          <p>Short-----$10</p>
+          <p>Medium----$20</p>
+          <p>Long------$30</p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row aln-center">
+        <div class="col-sm-4 col-6-meium col-12-small">
+          <h3> Short</h3>
+          <a class="image featured"><img src="image/pic01.jpg" width="240" height="300" /></a>
+        </div>
+        <div class="col-sm-4 col-6-meium col-12-small">
+          <h3> Medium</h3>
+          <a class="image featured"><img src="image/pic02.jpg" width="240" height="300" /></a>
+        </div>
+        <div class="col-sm-4 col-6-meium col-12-small">
+          <h3> Long</h3>
+          <a class="image featured"><img src="image/pic03.jpg" width="240" height="300" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>More information</h2>
+      <a href="#hairdressers" class="btn btn-primary btn-block" data-toggle="collapse">Meet our hairdressers</a>
+      <div id="hairdressers" class="card-columns">
+        <div class="card bg-secondary" style="width:200px">
+          <img class="card-img-top" src="image/photo1.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Shoulder Dori</h4>
+            <p class="card-text">Dori can make any pose possibility.</p>
+
+          </div>
+
+
+        </div>
+        <div class="card bg-secondary" style="width:200px">
+          <img class="card-img-top" src="image/photo2.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Shiny Ruo</h4>
+            <p class="card-text">He can give you a nice haircut even when he is taking KFC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="container-md p-3 my-3 border bg-info text-black">
+        <h1>G8 hair salon</h1>
+        <p>Bring you different experience!</p>
+      </div>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+          </div>
+          <div id="collapseService" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+              <p>Here is our list of services</p>
+              <br>
+              <select id="haircut">
+                <option value="haircut" selected="selected">Men's haircut</option>
+                <option value="haircut">Ladies haircut</option>
+                <option value="haircut">Perm</option>
+                <option value="haircut">Hair dye</option>
+                <option value="haircut">Shampoo</option>
+              </select>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+            </div>
+            <div id="collapseDate" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>What date?</p>
+
+                <div class="form-group row">
+                  <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                  <div class="col-10">
+                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+            </div>
+            <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>Your information so we can contact you</p>
+                <p>Form to enter name, email, phone</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+  </body>
+  <p id="signature">Site created by Ye Ji, Junhong Chen, Linyan Qi</p>
+
+</html>
